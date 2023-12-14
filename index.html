@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renewable Energy Tile Grid Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/scrubber.css" />
+    <link rel="stylesheet" href="css/tooltip.css" />
+    <link rel="stylesheet" href="css/tile-grid-map.css" />
+  </head>
+  <body>
+    <header>
+      <h1
+        ><span
+          >Renewable <br />
+          Energy</span
+        >
+        <br />
+        Tile Grid Map</h1
+      >
+      <div>
+        <p
+          >A tile grid map gives each country/area an equal size while
+          preserving the capability of showing geographical pattern. This layout
+          can serve as an alternative to choropleth maps and symbol maps.
+        </p>
+        <p
+          >This example map shows the share of primary energy consumption that
+          comes from renewables of world countries/areas. Data is sourced from
+          <a href="https://github.com/owid/energy-data" target="_blank"
+            >Data on Energy by Our World in Data</a
+          ></p
+        >
+        <p
+          >The map tile arrangement is from
+          <a
+            href="https://github.com/mustafasaifee42/Tile-Grid-Map"
+            target="_blank"
+            >Tile Grid Map JSON File</a
+          ></p
+        >
+      </div>
+    </header>
+    <main>
+      <h2
+        >Share of primary energy from renewable sources,
+        <span id="currentYear"></span
+      ></h2>
+      <p
+        >Renewable energy sources include hydropower, solar, wind, geothermal,
+        bioenergy, wave, and tidal. They don't include traditional biofuels,
+        which can be a key energy source, especially in lower-income
+        settings.</p
+      >
+      <div id="scrubber"></div>
+      <div id="tileGridMap" class="full-width"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="js/scrubber.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/tile-grid-map.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

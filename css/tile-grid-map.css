@@ -1,0 +1,32 @@
+.tile-grid-map {
+  --color-background: var(--color-primary-lighter);
+  --color-fill: var(--color-primary);
+  --color-text: var(--color-text);
+  overflow-x: auto;
+}
+
+.tile-grid-map > svg {
+  display: block;
+}
+
+.tile-grid-map .tile-background {
+  fill: var(--color-background);
+}
+
+.tile-grid-map .tile-fill {
+  fill: var(--color-fill);
+}
+
+.tile-grid-map .tile-code {
+  color: var(--color-text);
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+.tile-grid-map .no-data-path {
+  stroke: var(--color-background);
+}
+
+.tile-grid-map .no-data .tile-code {
+  fill-opacity: 0.5;
+}

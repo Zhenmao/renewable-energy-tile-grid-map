@@ -1,0 +1,87 @@
+:root {
+  --color-background: #f2f2f2;
+  --color-text: #31325c;
+  --color-primary: #4ba5ac;
+  --color-primary-light: #98cdd2;
+  --color-primary-lighter: #c6e9ec;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-block-end: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h1 span {
+  color: var(--color-primary);
+}
+
+p {
+  margin-block-end: 1rem;
+}
+
+a {
+  color: currentColor;
+}
+
+header,
+main {
+  inline-size: min(50rem, calc(100vw - 3rem));
+  margin: 3rem auto;
+}
+
+header {
+  display: flex;
+  gap: 0 3rem;
+  flex-wrap: wrap;
+}
+
+header > :first-child {
+  flex-grow: 1;
+}
+
+header > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
+
+.full-width {
+  position: relative;
+  width: min(80rem, calc(100vw - 3rem));
+  left: 50%;
+  transform: translateX(-50%);
+}
